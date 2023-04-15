@@ -1,0 +1,94 @@
+[
+  {
+    "SPARE PARTS": 61,
+    "_1": "CHOKE CABLE",
+    "_2": "CT-100/ OLD / PLATINA OLD",
+    "_3": 1,
+    "_4": 40,
+    "_5": 60,
+    "_6": 89,
+    "_7": 40,
+    "__EMPTY": 60,
+    "__EMPTY_1": 89,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 62,
+    "_1": "CHOKE CABLE",
+    "_2": "HERO MESTRO/ EDGE/DUET ",
+    "_3": 1,
+    "_4": 60,
+    "_5": 110,
+    "_6": 128,
+    "_7": 60,
+    "__EMPTY": 110,
+    "__EMPTY_1": 128,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 63,
+    "_1": "CHOKE CABLE",
+    "_2": "CT- 100 / PLATINA ",
+    "_3": 1,
+    "_6": 99,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 99,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 64,
+    "_1": "CHOKE CABLE",
+    "_2": "HUNK ",
+    "_3": 1,
+    "_6": 88,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 88,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 65,
+    "_1": "CHOKE CABLE",
+    "_2": "DISCOVER 125",
+    "_3": 1,
+    "_6": 80,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 80,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 66,
+    "_1": "CHOKE CABLE",
+    "_2": "MESTRO ",
+    "_3": 2,
+    "_6": 132,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 264,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 67,
+    "_1": "CHOKE CABLE",
+    "_2": "SUZUKI ACECESS  ",
+    "_3": 1,
+    "_6": 124,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 124,
+    "__EMPTY_2": "A2R2-1"
+  },
+  {
+    "SPARE PARTS": 68,
+    "_1": "CHOKE CABLE",
+    "_2": "HERO ",
+    "_3": 1,
+    "_6": 70,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 70,
+    "__EMPTY_2": "A2R2-1"
+  }
+]

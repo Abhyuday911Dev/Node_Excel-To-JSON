@@ -1,0 +1,113 @@
+[
+  {
+    "SPARE PARTS": 26,
+    "_1": "BRAKE CABLE",
+    "_2": "SPL. PASSION / PLUSE / CD DLX ",
+    "_3": 9,
+    "_4": 60,
+    "_5": 110,
+    "_6": 143,
+    "_7": 540,
+    "__EMPTY": 990,
+    "__EMPTY_1": 1287,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 27,
+    "_1": "BRAKE CABLE",
+    "_2": "HET / ZEUS ",
+    "_3": 1,
+    "_6": 221,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 221,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 28,
+    "_1": "BRAKE CABLE",
+    "_2": "JUPITER HIAR BREK ",
+    "_3": 1,
+    "_6": 229,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 229,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 29,
+    "_1": "BRAKE CABLE",
+    "_2": "DISKCOVER 100/ 150",
+    "_3": 30,
+    "_4": 60,
+    "_5": 110,
+    "_6": 135,
+    "_7": 1800,
+    "__EMPTY": 3300,
+    "__EMPTY_1": 4050,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 30,
+    "_1": "BRAKE CABLE",
+    "_2": "FRONT BRAKE ACCESS ",
+    "_3": 3,
+    "_6": 144,
+    "_7": 0,
+    "__EMPTY": 0,
+    "__EMPTY_1": 432,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 31,
+    "_1": "BRAKE CABLE",
+    "_2": "TVS STAR/ START CITY / SPORT ",
+    "_3": 1,
+    "_4": 60,
+    "_5": 120,
+    "_6": 162,
+    "_7": 60,
+    "__EMPTY": 120,
+    "__EMPTY_1": 162,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 32,
+    "_1": "BRAKE CABLE",
+    "_2": "FRONT BRAKE ACTIVA  N/M LH ",
+    "_3": 5,
+    "_4": 124,
+    "_5": 180,
+    "_6": 226,
+    "_7": 620,
+    "__EMPTY": 900,
+    "__EMPTY_1": 1130,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 33,
+    "_1": "BRAKE CABLE",
+    "_2": "FRONT BRAKE ACTIVA  N/M RH",
+    "_3": 1,
+    "_4": 124,
+    "_5": 180,
+    "_6": 226,
+    "_7": 124,
+    "__EMPTY": 180,
+    "__EMPTY_1": 226,
+    "__EMPTY_2": "A2R4-5"
+  },
+  {
+    "SPARE PARTS": 34,
+    "_1": "BRAKE CABLE",
+    "_2": "ACTIVA N/M REAR BRAKE ",
+    "_3": 1,
+    "_4": 120,
+    "_5": 180,
+    "_6": 215,
+    "_7": 120,
+    "__EMPTY": 180,
+    "__EMPTY_1": 215,
+    "__EMPTY_2": "A2R4-5"
+  }
+]

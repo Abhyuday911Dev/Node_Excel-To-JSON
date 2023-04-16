@@ -29,30 +29,19 @@ let keys = Object.keys(uniqueArray);
 let uniqueArrayPretty = {};
 
 keys.forEach((key) => {
-    let uniqueArrayPrettySection = uniqueArray[key].reduce((accumulator, currentValue) => {
-        if (!accumulator[currentValue._2]) {
-          accumulator[currentValue._2] = [];
-        }
-        accumulator[currentValue._2].push(currentValue);
-        return accumulator;
-      }, {});
-      uniqueArrayPretty[key] = uniqueArrayPrettySection;
-})
-
-
-
-
-// [array,a].forEach((element) => {
-//     const uniqueArrayPretty = element.reduce((accumulator, currentValue) => {
-//         if (!accumulator[currentValue._2]) {
-//           accumulator[currentValue._2] = [];
-//         }
-//         accumulator[currentValue._1].push(currentValue);
-//         return accumulator;
-//       }, {});
-// });
+  let uniqueArrayPrettySection = uniqueArray[key].reduce(
+    (accumulator, currentValue) => {
+      if (!accumulator[currentValue._2]) {
+        accumulator[currentValue._2] = [];
+      }
+      accumulator[currentValue._2].push(currentValue);
+      return accumulator;
+    },
+    {}
+  );
+  uniqueArrayPretty[key] = uniqueArrayPrettySection;
+});
 
 const jsonData911 = JSON.stringify(uniqueArrayPretty, null, 2);
-// console.log(jsonData911);
 
 fs.writeFileSync("final.json", jsonData911);

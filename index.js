@@ -17,86 +17,44 @@ const sheetData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
 
 // Convert the data to JSON format
 
-Chain_Spokit = sheetData.filter((e) => {
-  return e._1 === "Chain Spokit";
-});
+newarr = [];
+newarr1 = [];
 
-CLUTCH_CABLE = sheetData.filter((e) => {
-  return e._1 === "CLUTCH CABLE";
-});
+// var nex_data = sheetData.map((e, idx) => {
+// //   if (e._1 && idx !== 0) {
+// //     return newarr.push(e._1);
+// //   }
 
-BRAKE_CABLE = sheetData.filter((e) => {
-  return e._1 === "BRAKE CABLE";
-});
+//     newarr1{}
 
-ACC_CABLES = sheetData.filter((e) => {
-  return e._1 === "ACC CABLES";
-});
+// }, newarr);
 
-METER_CABLE = sheetData.filter((e) => {
-  return e._1 === "METER CABLE";
-});
+const array = [
+  { id: 1, name: "John", age: 30 },
+  { id: 2, name: "Jane", age: 25 },
+  { id: 3, name: "Bob", age: 40 },
+  { id: 2, name: "Mary", age: 28 },
+  { id: 1, name: "David", age: 35 },
+];
 
-CHOKE_CABLE = sheetData.filter((e) => {
-  return e._1 === "CHOKE CABLE";
-});
+const uniqueArray = sheetData.reduce((accumulator, currentValue) => {
+  if (!accumulator[currentValue._1]) {
+    accumulator[currentValue._1] =[] ;
+  }
+  accumulator[currentValue._1].push(currentValue);
+  return accumulator;
+}, {});
 
-BRAKE_SHOES = sheetData.filter((e) => {
-  return e._1 === "BRAKE SHOES";
-});
+// console.dir(uniqueArray['SPARK PLUGS'].details); 
 
-CLUTCH_PLATES = sheetData.filter((e) => {
-  return e._1 === "CLUTCH PLATES";
-});
+// const myArray = nex_data;
+// const mySet = [...new Set(newarr)];
+// console.log(mySet);
 
-PETROL_TANK_LOCK = sheetData.filter((e) => {
-  return e._1 === "PETROL TANK LOCK";
-});
+const jsonData911 = JSON.stringify(uniqueArray, null, 2);
 
-Ignition_Lock = sheetData.filter((e) => {
-  return e._1 === "Ignition Lock";
-});
+console.log(jsonData911);
 
-// null is the replacer function
-const jsonData = JSON.stringify(Chain_Spokit, null, 2);
+fs.writeFileSync("beta_final.json", jsonData911);
 
-const jsonData2 = JSON.stringify(CLUTCH_CABLE, null, 2);
-
-const jsonData3 = JSON.stringify(BRAKE_CABLE, null, 2);
-
-const jsonData4 = JSON.stringify(ACC_CABLES, null, 2);
-
-const jsonData5 = JSON.stringify(METER_CABLE, null, 2);
-
-const jsonData6 = JSON.stringify(CHOKE_CABLE, null, 2);
-
-const jsonData7 = JSON.stringify(BRAKE_SHOES, null, 2);
-
-const jsonData8 = JSON.stringify(CLUTCH_PLATES, null, 2);
-
-const jsonData9 = JSON.stringify(PETROL_TANK_LOCK, null, 2);
-
-const jsonData10 = JSON.stringify(Ignition_Lock, null, 2);
-
-// Write the JSON data to a file
-fs.writeFileSync("Chain_Spokit.json", jsonData);
-
-fs.writeFileSync("CLUTCH_CABLE.json", jsonData2);
-
-fs.writeFileSync("BRAKE_CABLE.json", jsonData3);
-
-fs.writeFileSync("ACC_CABLES.json", jsonData4);
-
-fs.writeFileSync("METER_CABLE.json", jsonData5);
-
-fs.writeFileSync("CHOKE_CABLE.json", jsonData6);
-
-fs.writeFileSync("BRAKE_SHOES.json", jsonData7);
-
-fs.writeFileSync("CLUTCH_PLATES.json", jsonData8);
-
-fs.writeFileSync("PETROL_TANK_LOCK.json", jsonData9);
-
-fs.writeFileSync("Ignition_Lock.json", jsonData10);
-
-console.log("Conversion complete");
+// console.log("Conversion complete");

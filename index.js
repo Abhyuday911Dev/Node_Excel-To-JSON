@@ -17,44 +17,42 @@ const sheetData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
 
 // Convert the data to JSON format
 
-newarr = [];
-newarr1 = [];
-
-// var nex_data = sheetData.map((e, idx) => {
-// //   if (e._1 && idx !== 0) {
-// //     return newarr.push(e._1);
-// //   }
-
-//     newarr1{}
-
-// }, newarr);
-
-const array = [
-  { id: 1, name: "John", age: 30 },
-  { id: 2, name: "Jane", age: 25 },
-  { id: 3, name: "Bob", age: 40 },
-  { id: 2, name: "Mary", age: 28 },
-  { id: 1, name: "David", age: 35 },
-];
-
-const uniqueArray = sheetData.reduce((accumulator, currentValue) => {
+let uniqueArray = sheetData.reduce((accumulator, currentValue) => {
   if (!accumulator[currentValue._1]) {
-    accumulator[currentValue._1] =[] ;
+    accumulator[currentValue._1] = [];
   }
   accumulator[currentValue._1].push(currentValue);
   return accumulator;
 }, {});
 
-// console.dir(uniqueArray['SPARK PLUGS'].details); 
+let keys = Object.keys(uniqueArray);
+let uniqueArrayPretty = {};
 
-// const myArray = nex_data;
-// const mySet = [...new Set(newarr)];
-// console.log(mySet);
+keys.forEach((key) => {
+    let uniqueArrayPrettySection = uniqueArray[key].reduce((accumulator, currentValue) => {
+        if (!accumulator[currentValue._2]) {
+          accumulator[currentValue._2] = [];
+        }
+        accumulator[currentValue._2].push(currentValue);
+        return accumulator;
+      }, {});
+      uniqueArrayPretty[key] = uniqueArrayPrettySection;
+})
 
-const jsonData911 = JSON.stringify(uniqueArray, null, 2);
 
-console.log(jsonData911);
 
-fs.writeFileSync("beta_final.json", jsonData911);
 
-// console.log("Conversion complete");
+// [array,a].forEach((element) => {
+//     const uniqueArrayPretty = element.reduce((accumulator, currentValue) => {
+//         if (!accumulator[currentValue._2]) {
+//           accumulator[currentValue._2] = [];
+//         }
+//         accumulator[currentValue._1].push(currentValue);
+//         return accumulator;
+//       }, {});
+// });
+
+const jsonData911 = JSON.stringify(uniqueArrayPretty, null, 2);
+// console.log(jsonData911);
+
+fs.writeFileSync("final.json", jsonData911);
